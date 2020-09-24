@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 1.6rem;
+   line-height: 2;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+.d-block{
+    display: block!important;
+}
+.contenido-centrado{
+    max-width: 800px;
+}
+.boton{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media ( min-width: 768px){
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton-amarillo{
+    background-color: #dba81a;
+}
+.boton-verde{
+    background-color: #35900b;
+}
+
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio{
+    background-image: url('../img/header.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1{
+    color:#ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+.barra{
+    padding-top: 3rem;
+}
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+@media(min-width: 768px){
+    .navegacion a{
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type{
+ margin: 0;
+    }
+}
+.navegacion a:hover{
+    color: #35900b;
+}
